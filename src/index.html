@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><span id="title">Bubble</span> Sort Visualizer</h1>
+      <div class="settings">
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">
+            Change Algorithm <i class="fa fa-angle-down"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <button onclick="bobbleAlgo()">Bobble Sort</button>
+            <button onclick="insertAlgo()">Insertion Sort</button>
+            <button onclick="selectAlgo()">Selection Sort</button>
+            <button onclick="mergeAlgo()">Merge Sort</button>
+            <button onclick="quickAlgo()">Quick Sort</button>
+          </div>
+        </div>
+        <label for="" id="label-speed">
+          Speed
+          <input type="number" name="" id="speed" value="200" />
+          ms
+        </label>
+      </div>
+      <div class="w-full">
+        <input
+          type="text"
+          name=""
+          value="93, 45, 143, 72, 11, 24, 84, 09, 122, 30, 10, 56, 15,  14"
+          id="arrayInput"
+        />
+      </div>
+      <div id="visual-container"></div>
+
+      <div class="btn-container">
+        <button id="start-button">start</button>
+        <button id="restartBtn" onclick="restart()">
+          <svg
+            width="16px"
+            height="16px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2.99988C16.9706 2.99988 21 7.02931 21 11.9999C21 16.9704 16.9706 20.9999 12 20.9999C7.02944 20.9999 3 16.9704 3 11.9999C3 9.17261 4.30367 6.64983 6.34267 4.99988"
+              stroke="#292929"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <path
+              d="M3 4.49988H7V8.49988"
+              stroke="#292929"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="../src/js/js.js"></script>
+  </body>
+</html>

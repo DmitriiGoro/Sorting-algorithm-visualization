@@ -1,0 +1,141 @@
+/* */
+body {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: lighter;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+#arrayInput {
+  padding: 9;
+  border-radius: 10px;
+  border: 3px solid #cfeada;
+  width: 100%;
+}
+
+#visual-container {
+  display: flex;
+  margin-right: 100px;
+  height: 300px;
+}
+
+.bar {
+  background-color: #cfeada;
+  margin-right: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+  color: black;
+  font-size: 14px;
+  height: 20;
+  border-radius: 10px;
+  padding: 10px 2px;
+  view-transition-name: var(--tag);
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#start-button {
+  width: fit-content;
+  background-color: #cfeada;
+  border: 0px;
+  border-radius: 30px;
+  padding: 12px 60px;
+  cursor: pointer;
+}
+
+/* Basic styles for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #cfeada;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  border-radius: 12px;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.w-full {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+  gap: 4px;
+}
+
+#label-speed {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+#label-speed input {
+  width: 60px;
+  padding: 5px;
+  border: 0;
+  outline: 2px solid #cfeada;
+  border-radius: 3px;
+}
+
+#restartBtn {
+  background-color: #cfeada;
+  border: 0;
+  padding: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  margin-left: 10;
+}
